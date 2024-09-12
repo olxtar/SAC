@@ -98,7 +98,11 @@ var parseMetadata = metadata => {
         series
       }
       eChart.setOption(option)
-    }
+
+      eChart.on('click', (parmas) => {
+        //https://echarts.apache.org/en/api.html#events.Mouse%20events.click
+        this.dispatchEvent(new Event('onClick'))
+    })
   }
 
   customElements.define('com-sap-sac-exercise-olxtar-main', Main)
