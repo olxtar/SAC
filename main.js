@@ -5,15 +5,15 @@ var getScriptPromisify = (src) => {
 }
 
 var parseMetadata = metadata => {
-	const { dimensions: dimensionMap, mainStructureMembers: measureMap } = metadata
+	const { dimensions: dimensionsMap, mainStructureMembers: measuresMap } = metadata
 	const dimensions = []
 	for (const key in dimensionsMap) {
 		const dimension = dimensionsMap[key]
 		dimensions.push({ key, ...dimension })
 	}
 	const measures = []
-	for (const key in measureMap) {
-		const measure = measureMap[key]
+	for (const key in measuresMap) {
+		const measure = measuresMap[key]
 		measures.push({ key, ...measure })
 	}
 	return { dimensions, measures, dimensionsMap, measuresMap }
@@ -85,7 +85,7 @@ var parseMetadata = metadata => {
 				if (this._eChart) { echarts.dispose(this._eChart) }
 				const eChart = this._eChart = echarts.init(this._root, 'main')
 				const option = {
-					xAxis: { type: 'category', data: catgegoryData },
+					xAxis: { type: 'category', data: categoryData },
 					yAxis: { type: 'value' },
 					tooltip: { trigger: 'axis'},
 					series
