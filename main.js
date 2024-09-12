@@ -29,7 +29,7 @@
 			}
 
 			render () {
-				this._root.textContent = 'Hellod Custom Widget clientWidtdh: ${this.clientWidth}, clientHeight: ${this.clientHeight}'
+				this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
 			}
 		}
 			
