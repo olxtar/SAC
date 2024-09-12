@@ -112,5 +112,5 @@ var parseMetadata = metadata => {
     }
   }
 
-  customElements.define('com-sap-sac-exercise-008-main', Main)
+  customElements.define('com-sap-sac-exercise-olxtar-main', Main)
 })()
