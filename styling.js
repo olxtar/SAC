@@ -55,6 +55,6 @@
       }
     }
   
-    customElements.define('com-sap-sac-exercise-008-styling', Styling)
+    customElements.define('com-sap-sac-exercise-olxtar-styling', Styling)
   })()
   
