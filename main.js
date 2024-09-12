@@ -19,7 +19,7 @@
 			}
 		}
 			
-		customElements.define('com-sap-sac-exercise-gjlee-main', Main)
+		customElements.define('com-sap-sac-exercise-olxtar-main', Main)
 	})()
 	
 	
